@@ -1,0 +1,571 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1-1",
+      "creationTime": 1623852241462,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "7338d32e-3072-415d-ba69-ee31c1c12d0a",
+      "importAttempts": 0,
+      "importComplete": true,
+      "lastUpdateTime": 1624455844704,
+      "lastUpdateUserId": "37f0d701-53a6-4a7d-9f3a-2b7dfb62b662",
+      "locked": false,
+      "name": "Clusters Dashboard",
+      "rank": 0,
+      "shared": false,
+      "states": [],
+      "temporary": false,
+      "userId": "37f0d701-53a6-4a7d-9f3a-2b7dfb62b662",
+      "widgetInteractions": [
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "051bcf07-5f2d-4dd8-84a3-1011dab2bede",
+            "widgetIdReceiver": "141cced3-70f9-4519-a8dc-48c5623e38a7"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "149b35e5-d29b-45d4-985f-474672f7e5bf",
+            "widgetIdReceiver": "141cced3-70f9-4519-a8dc-48c5623e38a7"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "a0c5274e-34a0-4548-b454-44d6d72328ae",
+            "widgetIdReceiver": "141cced3-70f9-4519-a8dc-48c5623e38a7"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "776debc0-aebe-41dd-a7f5-f3f38db3c917",
+            "widgetIdReceiver": "141cced3-70f9-4519-a8dc-48c5623e38a7"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "37ddc893-6062-4064-b225-7228c2b81b6f",
+            "widgetIdReceiver": "141cced3-70f9-4519-a8dc-48c5623e38a7"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "da7cdc14-5522-427f-aac1-e7ce5a44c3d9",
+            "widgetIdReceiver": "141cced3-70f9-4519-a8dc-48c5623e38a7"
+         }
+      ],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [
+                  {
+                     "attributeKind": {"value": ""},
+                     "color": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "thresholds": {
+                           "colors": [
+                              "#00ff00",
+                              "#FFFF00",
+                              "#ff0000"
+                           ],
+                           "values": [
+                              0,
+                              50,
+                              100
+                           ]
+                        }
+                     },
+                     "colorBy": {
+                        "metricKey": "cpu|workload",
+                        "value": "CPU|Workload (%)"
+                     },
+                     "filterMode": "tagPicker",
+                     "focusOnGroups": true,
+                     "groupBy": {
+                        "id": "004null002006VMWAREDatacenter",
+                        "parentId": "VMWARE",
+                        "parentText": "vCenter Adapter",
+                        "text": "Datacenter",
+                        "type": "resourceKind",
+                        "typeId": "resourceKind:id:0_::_"
+                     },
+                     "mode": {"mode": false},
+                     "name": "CPU Cluster Heat Map ",
+                     "relationalGrouping": false,
+                     "resourceKind": "resourceKind:id:1_::_",
+                     "sizeBy": {
+                        "metricKey": "cpu|workload",
+                        "value": "CPU|Workload (%)"
+                     },
+                     "solidColoring": false,
+                     "thenBy": null
+                  },
+                  {
+                     "attributeKind": {"value": ""},
+                     "color": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "thresholds": {
+                           "colors": [
+                              "#00ff00",
+                              "#FFFF00",
+                              "#ff0000"
+                           ],
+                           "values": [
+                              0,
+                              50,
+                              100
+                           ]
+                        }
+                     },
+                     "colorBy": {
+                        "metricKey": "mem|usage_average",
+                        "value": "Memory|Usage (%)"
+                     },
+                     "focusOnGroups": true,
+                     "groupBy": {
+                        "id": "004null002006VMWAREDatacenter",
+                        "parentId": "VMWARE",
+                        "parentText": "vCenter Adapter",
+                        "text": "Datacenter",
+                        "type": "resourceKind",
+                        "typeId": "resourceKind:id:0_::_"
+                     },
+                     "mode": {"mode": false},
+                     "name": "RAM Cluster Heat Map ",
+                     "relationalGrouping": false,
+                     "resourceKind": "resourceKind:id:1_::_",
+                     "sizeBy": {
+                        "metricKey": "mem|usage_average",
+                        "value": "Memory|Usage (%)"
+                     },
+                     "solidColoring": false,
+                     "thenBy": null
+                  }
+               ],
+               "depth": 10,
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 1200,
+               "relationshipMode": {"relationshipMode": 0},
+               "resource": [],
+               "selfProvider": {"selfProvider": true},
+               "title": "Clusters Grouped By Data Center Heatmap",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 12,
+               "x": 1,
+               "y": 1
+            },
+            "height": 324,
+            "id": "a0c5274e-34a0-4548-b454-44d6d72328ae",
+            "states": [
+               {
+                  "key": "perm_HeatMap_widget_7338d32e-3072-415d-ba69-ee31c1c12d0a_a0c5274e-34a0-4548-b454-44d6d72328ae",
+                  "value": "o%3A"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_7338d32e-3072-415d-ba69-ee31c1c12d0a_a0c5274e-34a0-4548-b454-44d6d72328ae",
+                  "value": "b%3A1"
+               }
+            ],
+            "title": "Clusters Grouped By Data Center Heatmap",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [
+                  {
+                     "boxLabel": "Capacity (MHz)",
+                     "metricKey": "cpu|haTotalCapacity_average",
+                     "metricName": "CPU|Usable Capacity (MHz)",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "Usage (MHz)",
+                     "metricKey": "cpu|usagemhz_average",
+                     "metricName": "CPU|Usage (MHz)",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "HA Enabled ",
+                     "metricKey": "configuration|dasConfig|enabled",
+                     "metricName": "Cluster Configuration|DAS Configuration|HA Enabled",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "DRS Enabled ",
+                     "metricKey": "configuration|drsconfig|enabled",
+                     "metricName": "Cluster Configuration|DRS Configuration|Enabled",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "Admission Control Enable",
+                     "metricKey": "configuration|dasConfig|admissionControlEnabled",
+                     "metricName": "Cluster Configuration|DAS Configuration|Admission Control Enabled",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  }
+               ],
+               "barsCount": 15,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 10,
+               "filterMode": "tagPicker",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metric": {
+                  "metricKey": "cpu|workload",
+                  "name": "CPU|Workload (%)"
+               },
+               "metricName": "",
+               "metricUnit": {
+                  "metricUnitId": -1,
+                  "metricUnitName": "Auto"
+               },
+               "mode": "all",
+               "orangeBound": 85,
+               "percentileValue": null,
+               "redBound": 90,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 150,
+               "regenerationTime": 5,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "resourceKind": [{"id": "resourceKind:id:1_::_"}],
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagFilter": null,
+               "title": "Top-15 Clusters CPU Usage",
+               "topOption": "metricsHighestUtilization",
+               "yellowBound": 70
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 6,
+               "x": 1,
+               "y": 7
+            },
+            "height": 495,
+            "id": "051bcf07-5f2d-4dd8-84a3-1011dab2bede",
+            "states": [{
+               "key": "perm_toolbarVisible_widget_7338d32e-3072-415d-ba69-ee31c1c12d0a_051bcf07-5f2d-4dd8-84a3-1011dab2bede",
+               "value": "b%3A0"
+            }],
+            "title": "Top-15 Clusters CPU Usage",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "alertAction": [],
+               "alertImpact": [],
+               "criticalityLevel": [],
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "filterMode": "tagPicker",
+               "mode": "all",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": false},
+               "state": [],
+               "status": [0],
+               "tagFilter": null,
+               "title": "Alert List",
+               "type": []
+            },
+            "gridsterCoords": {
+               "h": 5,
+               "w": 12,
+               "x": 1,
+               "y": 24
+            },
+            "height": 267,
+            "id": "141cced3-70f9-4519-a8dc-48c5623e38a7",
+            "states": [
+               {
+                  "key": "permAlertGrid_perm_widget_7338d32e-3072-415d-ba69-ee31c1c12d0a_141cced3-70f9-4519-a8dc-48c5623e38a7",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ewidth%25253Dn%2525253A440%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%255Eo%25253Aid%25253Ds%2525253Ah12%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AstartTimeUtc%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AstartTimeUtc"
+               },
+               {
+                  "key": "permDateFilter_widget_7338d32e-3072-415d-ba69-ee31c1c12d0a_141cced3-70f9-4519-a8dc-48c5623e38a7",
+                  "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_7338d32e-3072-415d-ba69-ee31c1c12d0a_141cced3-70f9-4519-a8dc-48c5623e38a7",
+                  "value": "b%3A1"
+               },
+               {
+                  "key": "permViewMode_widget_7338d32e-3072-415d-ba69-ee31c1c12d0a_141cced3-70f9-4519-a8dc-48c5623e38a7",
+                  "value": "s%3Atime"
+               }
+            ],
+            "title": "Alert List",
+            "type": "AlertList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [
+                  {
+                     "boxLabel": "Capacity (KB)",
+                     "metricKey": "mem|haTotalCapacity_average",
+                     "metricName": "Memory|Usable Capacity (KB)",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "Utilization (KB)",
+                     "metricKey": "mem|total_need",
+                     "metricName": "Memory|Utilization (KB)",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "HA Enable ",
+                     "metricKey": "configuration|dasConfig|admissionControlEnabled",
+                     "metricName": "Cluster Configuration|DAS Configuration|Admission Control Enabled",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "DRS Enable",
+                     "metricKey": "configuration|drsconfig|enabled",
+                     "metricName": "Cluster Configuration|DRS Configuration|Enabled",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  }
+               ],
+               "barsCount": 15,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 10,
+               "filterMode": "tagPicker",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metric": {
+                  "metricKey": "mem|usage_average",
+                  "name": "Memory|Usage (%)"
+               },
+               "metricName": "",
+               "metricUnit": {
+                  "metricUnitId": -1,
+                  "metricUnitName": "Auto"
+               },
+               "mode": "all",
+               "orangeBound": 80,
+               "percentileValue": null,
+               "redBound": 90,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 6300,
+               "regenerationTime": 15,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "resourceKind": [{"id": "resourceKind:id:1_::_"}],
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagFilter": null,
+               "title": "Top-15 Clusters RAM Usage",
+               "topOption": "metricsHighestUtilization",
+               "yellowBound": 70
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 6,
+               "x": 7,
+               "y": 7
+            },
+            "height": 495,
+            "id": "149b35e5-d29b-45d4-985f-474672f7e5bf",
+            "states": [{
+               "key": "perm_toolbarVisible_widget_7338d32e-3072-415d-ba69-ee31c1c12d0a_149b35e5-d29b-45d4-985f-474672f7e5bf",
+               "value": "b%3A0"
+            }],
+            "title": "Top-15 Clusters RAM Usage",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "barsCount": 15,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 10,
+               "filterMode": "tagPicker",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metric": {
+                  "metricKey": "net|usage_average",
+                  "name": "Network|Usage Rate (KBps)"
+               },
+               "metricName": "",
+               "metricUnit": {
+                  "metricUnitId": -1,
+                  "metricUnitName": "Auto"
+               },
+               "mode": "all",
+               "percentileValue": null,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 3150,
+               "regenerationTime": 30,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "resourceKind": [{"id": "resourceKind:id:1_::_"}],
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagFilter": null,
+               "title": "Top-15 Clusters Usage Rate (KBps)",
+               "topOption": "metricsHighestUtilization"
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 4,
+               "x": 9,
+               "y": 16
+            },
+            "height": 438,
+            "id": "da7cdc14-5522-427f-aac1-e7ce5a44c3d9",
+            "title": "Top-15 Clusters Usage Rate (KBps)",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "barsCount": 15,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 10,
+               "filterMode": "tagPicker",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metric": {
+                  "metricKey": "net|transmitted_average",
+                  "name": "Network|Data Transmit Rate (KBps)"
+               },
+               "metricName": "Data Transmit Rate (KBps)",
+               "metricUnit": {
+                  "metricUnitId": -1,
+                  "metricUnitName": "Auto"
+               },
+               "mode": "all",
+               "percentileValue": null,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 3150,
+               "regenerationTime": 30,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "resourceKind": [{"id": "resourceKind:id:1_::_"}],
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagFilter": null,
+               "title": "Top-15 Clusters Data Transmit Rate (KBps)",
+               "topOption": "metricsHighestUtilization"
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 4,
+               "x": 5,
+               "y": 16
+            },
+            "height": 438,
+            "id": "37ddc893-6062-4064-b225-7228c2b81b6f",
+            "title": "Top-15 Clusters Data Transmit Rate (KBps)",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "barsCount": 15,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 10,
+               "filterMode": "tagPicker",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metric": {
+                  "metricKey": "net|received_average",
+                  "name": "Network|Data Receive Rate (KBps)"
+               },
+               "metricName": "",
+               "metricUnit": {
+                  "metricUnitId": -1,
+                  "metricUnitName": "Auto"
+               },
+               "mode": "all",
+               "percentileValue": null,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 3150,
+               "regenerationTime": 30,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "resourceKind": [{"id": "resourceKind:id:1_::_"}],
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagFilter": null,
+               "title": "Top-15 Clusters Data Receive Rate",
+               "topOption": "metricsHighestUtilization"
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 4,
+               "x": 1,
+               "y": 16
+            },
+            "height": 438,
+            "id": "776debc0-aebe-41dd-a7f5-f3f38db3c917",
+            "title": "Top-15 Clusters Data Receive Rate",
+            "type": "ParetoAnalysis"
+         }
+      ]
+   }],
+   "entries": {"resourceKind": [
+      {
+         "adapterKindKey": "VMWARE",
+         "internalId": "resourceKind:id:0_::_",
+         "resourceKindKey": "Datacenter"
+      },
+      {
+         "adapterKindKey": "VMWARE",
+         "internalId": "resourceKind:id:1_::_",
+         "resourceKindKey": "ClusterComputeResource"
+      }
+   ]},
+   "uuid": "e6b3ef22-73b6-4fd8-938d-e92c1d9b983f"
+}
